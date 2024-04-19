@@ -26,8 +26,6 @@ const AccountProvider = function ({ children }: Props) {
     const [assetsFromAddress, setAssetsFromAddress] = useState<ProductType[]>(
         []
     );
-
-    console.log(wallet?.address);
     const [currentPageAssetsFromAddress, setCurrentPageAssetsFromAddress] =
         useState<number>(1);
     const [totalPagesAssetsFromAddress, setTotalPagesAssetsFromAddress] =
