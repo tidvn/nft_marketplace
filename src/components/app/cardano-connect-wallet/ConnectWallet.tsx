@@ -55,8 +55,10 @@ export function ConnectWallet() {
 
   return (
     <>
-      <Button onClick={() => setOpenWallet(true)}>Connect Wallet</Button>
       <Dialog open={openWallet}>
+        <DialogTrigger asChild>
+          <Button onClick={() => setOpenWallet(true)}>Connect Wallet</Button>
+        </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
             <DialogTitle>Connect a wallet</DialogTitle>
